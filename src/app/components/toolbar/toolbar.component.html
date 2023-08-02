@@ -1,0 +1,87 @@
+<div id="tienich">
+    <div class="ultility"> 
+        <p>Thông tin</p>           
+        <select style="border: none; font-size: 11px;background-color: #f4f5f8; width: 60px;">
+            <option value="0">Dịch vụ</option>
+            <option value="1">Ứng dụng</option>
+            <option value="2">Kênh truyền thông xã hội</option>                
+        </select>
+        <p>Hỗ trợ</p>
+        <p>Công ty(Tiếng Anh)</p>
+    </div>
+</div>
+
+<div id="main">
+    <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_cv9MaszeKTekDbkeP_k1hG0MnqLb_MPOySyaFqHEg1tLqKg58BuIuXze6KP0597A6XU&usqp=CAU" alt="">
+    </div>
+    <div class="sanpham">
+        <p>Đồng hồ</p>
+        <p>Nhạc cụ điện tử</p>
+        <p>Máy tính</p>
+        <p>Các loại khác</p>
+    </div>
+    
+
+    <div class="cart">
+        <div (click)="openDialog()" class="cartlogo">
+            <button>ADD Product</button>
+        </div>
+        <dialog id="dialog" >
+            <div class="exit">
+                <span onclick="performClose()" class="material-symbols-outlined">close</span>
+            </div>
+        </dialog>
+
+
+    </div>
+    <div class="input">
+        <input type="search" autocomplete="off" value="Từ khóa"/>
+        <img src="https://www.casio.com/etc.clientlibs/casio/clientlibs/clientlib-site/resources/images/header/icon_heart_black.svg" alt="">
+    </div>
+</div>
+
+<dialog #appDialog>
+    <h1 style="display: flex; justify-content: center;">Add product</h1>
+    <form class="form" [formGroup]="productForm">
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          formControlName="name"
+          placeholder="Product"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="number"
+          class="form-control"
+          id="price"
+          formControlName="price"
+          placeholder="Price"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          id="quantity"
+          formControlName="imgSrc"
+          placeholder="Image"
+        />
+      </div>
+
+      
+    </form>
+    <div class="btn">
+      <button mat-button mat-dialog-close (click)="closeDialog()">Close</button>
+      <button
+        (click)="addProduct(productForm.value)"
+        mat-flat-button
+        color="primary"
+      >
+        Submit
+      </button>
+    </div>
+  </dialog>

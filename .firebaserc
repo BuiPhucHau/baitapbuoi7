@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "baitapbuoi7": {
+      "hosting": {
+        "casio": [
+          "baitapbuoi7"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "baitapbuoi7"
+  }
+}

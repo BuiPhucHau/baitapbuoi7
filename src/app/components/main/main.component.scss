@@ -1,0 +1,221 @@
+.hinh {
+    width: 100%;
+}
+
+
+.tuvan {
+    width: 100%;
+    margin-top: 100px;
+}
+.tuvan b {
+    width: 100%; 
+    display: flex;
+    font-size: 30px;
+    justify-content: start;
+}
+.cart {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.cartlogo > img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+#dialog{
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+    box-shadow: 5px 10px 20px black inset;
+    
+    border-radius: 50px 20px;
+}
+
+#dialog > p{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.exit > span{
+    padding: 0px;
+    font-size: 16px;
+    margin: 0px;
+    display: flex;
+    justify-content: end;
+}
+.content-input{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 5px;
+}
+
+.product-bill{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.bill-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+    width: 90%;
+    border: 1px solid #8a8a8a;
+    background-color: #c3c3c3;
+    border-radius: 15px;
+    padding: 5px 20px;
+    justify-content: space-between;
+}
+
+.bill-input > button{
+    height: 25px;
+    border: 0.5px solid grey;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.text-bill{
+    display: flex;
+    justify-content: start;
+}
+
+.btn-confirm > button{
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    background-color: #ee6885;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 5px 20px;
+    transition: all 500ms;
+    border: 0;
+    font-size: 16px;
+    touch-action: manipulation;
+}
+.btn-confirm > button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0 -25px 18px -14px inset,rgba(0, 0, 0, 0.25) 0 1px 2px,rgba(0, 0, 0, 0.25) 0 2px 4px,rgba(0, 0, 0, 0.25) 0 4px 8px,rgba(0, 0, 0, 0.25) 0 8px 16px,rgba(0, 0, 0, 0.25)0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+
+#dongho{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color:#f7f8fa;
+    box-shadow: 5px 10px 20px black inset;
+    overflow-y: auto;
+}
+.product1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+        width: 200px;
+        height: 200px;
+        padding: 0 3rem;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;           
+    }   
+}
+
+.product > button {
+    width: 30%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.baobocthongtin {
+    width: 100%; 
+    margin-top: 100px;
+    padding-bottom: 50px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.thongtin > b {
+    margin: 0px;
+    font-size: 30px;
+}
+.img {
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:#f7f8fa;
+}
+.dongho > img{
+    width: 100%px;
+    height: 150px;
+    padding: 0 1rem;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.nhaccu >img {
+    width: 240px;
+    height: 150px;
+    padding: 0 1rem;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.maytinhcoban > img{
+    width: 135px;
+    height: 150px;
+    padding: 0 3rem;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.maytinhkhoahoc > img{
+    width: 113px;
+    height: 150px;
+    padding: 0 3rem;
+    margin: 0 20px;
+}
+
+
+.dongho > p{
+    display: flex;
+    justify-content: center;    
+}
+.nhaccu > p{
+    display: flex;
+    justify-content: center;    
+}
+.maytinhcoban > p{
+    display: flex;
+    justify-content: center;    
+}.maytinhkhoahoc > p{
+    display: flex;
+    justify-content: center;    
+}

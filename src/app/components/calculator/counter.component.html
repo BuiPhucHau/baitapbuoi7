@@ -1,0 +1,39 @@
+<form class="calculator">
+       <table>
+              <tr>
+                     <td colspan="4">
+                            <div id="display">{{ caculator.firstNumber }} {{ caculator.secondNumber }} <br> <br> <br>{{ caculator.result }}</div>                           
+                     </td>
+                   
+              <tr>
+              <tr>
+                     <td><input id="clear" type="button" name="one" value="AC" (click)="clearAll()"></td>
+              </tr>
+              <tr>
+                     <td><input type="button" name="one" value="7" (click)="pressKeyWord('7')"></td>
+                     <td><input type="button" name="one" value="8" (click)="pressKeyWord('8')"></td>
+                     <td><input type="button" name="one" value="9" (click)="pressKeyWord('9')"></td>
+                     <td><input class="operator" type="button" name="one" value="+" (click)="pressKeyWord('+')"></td>
+              </tr>
+              <tr>
+                     <td><input type="button" name="one" value="4" (click)="pressKeyWord('4')"></td>
+                     <td><input type="button" name="one" value="5" (click)="pressKeyWord('5')"></td>
+                     <td><input type="button" name="one" value="6" (click)="pressKeyWord('6')"></td>
+                     <td><input class="operator" type="button" name="one" value="-" (click)="pressKeyWord('-')"></td>
+              </tr>
+               <tr>
+                     <td><input type="button" name="one" value="1" (click)="pressKeyWord('1')"></td>
+                     <td><input type="button" name="one" value="2" (click)="pressKeyWord('2')"></td>
+                     <td><input type="button" name="one" value="3" (click)="pressKeyWord('3')"></td>
+                     <td><input class="operator" type="button" name="one" value="*" (click)="pressKeyWord('*')"></td>
+              </tr>
+              <tr>
+                     <td><input type="button" id="clear" name="clear" value="c" (click)="clear()"></td>
+                     <td><input type="button" name="zero" value="0" (click)="pressKeyWord('0')"></td>
+                     <td><input type="button" name="doit" value="=" (click)="pressKeyWord('=')"></td>
+                     <td><input type="button" class="operator" name="div" value="/" (click)="pressKeyWord('/')"></td>
+          
+              </tr>
+       </table>
+  
+   </form>
