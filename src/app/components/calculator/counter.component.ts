@@ -69,18 +69,30 @@ export class CounterComponent {
     this.isFristOperation = false;
   }
   delete() {
-    this.secondNumberArray.pop();
-    if (this.secondNumberArray.length == 0) {
-      this.caculator.secondNumber = 0;
-      console.log(this.caculator.secondNumber);
-    } else {
-      this.caculator.secondNumber = parseFloat(this.secondNumberArray.join(''));
+
+     if(!this.isToSecondNumber){
+      this.firstNumberArray.pop();
+      if (this.firstNumberArray.length == 0) {
+        this.caculator.firstNumber = 0;
+        console.log(this.caculator.secondNumber);
+      } else {
+        this.caculator.firstNumber = parseFloat(this.firstNumberArray.join(''));
+      }
     }
-    switch (this.caculator.operation) {
-      case '+': this.caculator.result = this.caculator.firstNumber + this.caculator.secondNumber; break;
-      case '-': this.caculator.result = this.caculator.firstNumber - this.caculator.secondNumber; break;
-      case '*': this.caculator.result = this.caculator.firstNumber * this.caculator.secondNumber; break;
-      case '/': this.caculator.result = this.caculator.firstNumber / this.caculator.secondNumber; break;
+    else{
+      this.secondNumberArray.pop();
+      if (this.secondNumberArray.length == 0) {
+        this.caculator.secondNumber = 0;
+        console.log(this.caculator.secondNumber);
+      } else {
+        this.caculator.secondNumber = parseFloat(this.secondNumberArray.join(''));
+      }
+      switch (this.caculator.operation) {
+        case '+': this.caculator.result = this.caculator.firstNumber + this.caculator.secondNumber; break;
+        case '-': this.caculator.result = this.caculator.firstNumber - this.caculator.secondNumber; break;
+        case '*': this.caculator.result = this.caculator.firstNumber * this.caculator.secondNumber; break;
+        case '/': this.caculator.result = this.caculator.firstNumber / this.caculator.secondNumber; break;
+      }
     }
   }
   clear() {
